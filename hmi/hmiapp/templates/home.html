@@ -1,0 +1,17 @@
+<!-- hmiapp/templates/home.html -->
+
+<html>
+<head>
+    <title>PLC Flowrate Control</title>
+</head>
+<body>
+    <h2>PLC Flowrate Control</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="flowrate">Enter Flowrate:</label>
+        <input type="number" name="flowrate" step="0.01" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
